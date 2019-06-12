@@ -1,0 +1,26 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "This feature is creating a new account in phptravels.net",
+    "children" : [ {
+      "name" : "Sign up new user successfully",
+      "children" : [ {
+        "name" : "Sign up new user successfully",
+        "uid" : "5c08f00e3c3a493d",
+        "parentUid" : "92f9bb4135656232af20bf11d3c318f9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1552494420938,
+          "stop" : 1552494438059,
+          "duration" : 17121
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "92f9bb4135656232af20bf11d3c318f9"
+    } ],
+    "uid" : "8f37ccd7e4dee2407bf8f9cd93f8e86a"
+  } ]
+}

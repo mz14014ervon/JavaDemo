@@ -1,0 +1,2 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Wed Mar 13 18:27:00 EET 2019","Wed Mar 13 18:27:18 EET 2019","17121","","This feature is creating a new account in phptravels.net","","Sign up new user successfully","","Sign up new user successfully",""

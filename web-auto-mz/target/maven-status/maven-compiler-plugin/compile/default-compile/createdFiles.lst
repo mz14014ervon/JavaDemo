@@ -1,0 +1,6 @@
+pages/HomePageObject.class
+general/User.class
+pages/RegisterPageObject.class
+pages/AccountPageObject.class
+Base/BaseUtil.class
+utils/RandomDataGenerator.class

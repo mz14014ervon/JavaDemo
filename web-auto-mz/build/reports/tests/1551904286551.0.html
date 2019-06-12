@@ -1,0 +1,1207 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="php travels is complete booking and reservation system provides complete solution for travel agency" />
+<meta name="keywords" content="php travels script, php hotels booking script, php reservation system" />
+<meta name="author" content="PHPTRAVELS" />
+<title>Register</title>
+<link rel="shortcut icon" href="https://www.phptravels.net/uploads/global/favicon.png" />
+<link href="https://www.phptravels.net/themes/default/assets/css/bootstrap.css" rel="stylesheet" media="screen" />
+<link href="https://www.phptravels.net/themes/default/style.css" rel="stylesheet" />
+<link href="https://www.phptravels.net/themes/default/assets/css/navigation.css" rel="stylesheet" />
+<!--<link href="https://www.phptravels.net/themes/default/eder.css" rel="stylesheet"> -->
+<link href="https://www.phptravels.net/themes/default/assets/css/mobile.css" rel="stylesheet" media="screen" />
+<!-- facebook --> <meta property="og:title" content="Register" /> <meta property="og:site_name" content="PHPTRAVELS" /> <meta property="og:description" content="php travels is complete booking and reservation system provides complete solution for travel agency" /> <meta property="og:image" content="https://www.phptravels.net/uploads/global/favicon.png" />  <meta property="og:url" content="https://www.phptravels.net/" /> <meta property="og:publisher" content="https://www.facebook.com/PHPTRAVELS" /> <script type="application/ld+json">{"@context":"http://schema.org/","@type":"Organization","name":"PHPTRAVELS","url":"https://www.phptravels.net/","logo":"https://www.phptravels.net/uploads/global/favicon.png","sameAs":"https://www.facebook.com/PHPTRAVELS","sameAs":"https://twitter.com/PHPTRAVELS","sameAs":"https://www.pinterest.com/PHPTRAVELS/","sameAs":"https://plus.google.com/u/0/PHPTRAVELS/posts","contactPoint":{"@type":"ContactPoint","telephone":"","contactType":"Customer Service"}}{"@context":"http://schema.org","@type":"WebSite","name":"PHPTRAVELS","url":"https://www.phptravels.net"}  </script>
+<!-- Child Theme --> <style> @import "https://www.phptravels.net/themes/default/assets/css/childstyle.css"; </style>
+<!-- Google Maps --> <!-- jQuery --> <script src="https://www.phptravels.net/themes/default/assets/js/jquery-2.2.4.min.js"></script>
+<!-- RTL CSS --> <!-- Mobile Redirect --> <!--[if lt IE 7] > <link rel="stylesheet" type="text/css" href="https://www.phptravels.net/themes/default/assets/css/font-awesome-ie7.css" media="screen" /> <![endif]-->
+<!-- Autocomplete files-->
+<link href="https://www.phptravels.net/themes/default/assets/js/autocomplete/easy-autocomplete.min.css" rel="stylesheet" type="text/css" />
+<script src="https://www.phptravels.net/themes/default/assets/js/autocomplete/jquery.easy-autocomplete.min.js" type="text/javascript"></script>
+<script src="https://www.phptravels.net/assets/include/datepicker/datepicker.js"></script>
+<script src="https://www.phptravels.net/themes/default/assets/js/bootstrap.min.js"></script>
+<!-- Autocomplete files-->
+<script>var base_url = 'https://www.phptravels.net/';</script>
+</head>
+<body style="overflow: visible;">
+<div id="preloader" class="loader-wrapper" style="display: none;">
+    <div class="progress">
+     <div class="indeterminate"></div>
+    </div>
+</div>
+<div class="tbar-top hidden-sm hidden-xs">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-4 col-xs-7 go-right">
+                <div class="contact-box">
+                    <ul class="hidden-sm hidden-xs">
+                                                                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal  left  fade" id="sidebar_left" tabindex="1" role="dialog" aria-labelledby="sidebar_left">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close go-left" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="close icon-angle-left"></i></span></button>
+                <h4 class="modal-title go-text-right" id="sidebar_left"><i class="icon_set_1_icon-65 go-right"></i> Settings</h4>
+            </div>
+            <ul class="nav navbar-nav navbar-side navbar-right sidebar go-left user_menu">
+        <li id="li_myaccount">
+        <a href="javascript:void(0);" data-toggle="dropdown" class="dropdown-toggle go-text-right"><i class="icon_set_1_icon-70 go-right"></i> My Account <b class="lightcaret mt-2 go-left"></b></a>
+        <ul class="dropdown-menu">
+            <li><a class="go-text-right" href="https://www.phptravels.net/login"> Login</a></li>
+            <li><a class="go-text-right" href="https://www.phptravels.net/register">  Sign Up</a></li>
+        </ul>
+    </li>
+        <div class="header-brdr pull-left hidden-xs hidden-md go-left"></div>
+            <li class="dropdown">
+            <a class="dropdown-toggle go-text-right" data-toggle="dropdown" href="#">
+                <strong><i class="icon-money-2 go-right"></i> 
+                    USD                </strong>
+            </a>
+            <ul class="dropdown-menu wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">
+                                <li>
+                    <a class="go-text-right" data-code="1" href="#" onclick="change_currency(this)">
+                        USD                    </a>
+                </li>
+                                <li>
+                    <a class="go-text-right" data-code="3" href="#" onclick="change_currency(this)">
+                        GBP                    </a>
+                </li>
+                                <li>
+                    <a class="go-text-right" data-code="9" href="#" onclick="change_currency(this)">
+                        SAR                    </a>
+                </li>
+                                <li>
+                    <a class="go-text-right" data-code="11" href="#" onclick="change_currency(this)">
+                        EUR                    </a>
+                </li>
+                                <li>
+                    <a class="go-text-right" data-code="12" href="#" onclick="change_currency(this)">
+                        PKR                    </a>
+                </li>
+                                <li>
+                    <a class="go-text-right" data-code="13" href="#" onclick="change_currency(this)">
+                        KWD                    </a>
+                </li>
+                                <li>
+                    <a class="go-text-right" data-code="17" href="#" onclick="change_currency(this)">
+                        JPY                    </a>
+                </li>
+                                <li>
+                    <a class="go-text-right" data-code="18" href="#" onclick="change_currency(this)">
+                        INR                    </a>
+                </li>
+                                <li>
+                    <a class="go-text-right" data-code="19" href="#" onclick="change_currency(this)">
+                        CNY                    </a>
+                </li>
+                                <li>
+                    <a class="go-text-right" data-code="20" href="#" onclick="change_currency(this)">
+                        TRY                    </a>
+                </li>
+                                <li>
+                    <a class="go-text-right" data-code="21" href="#" onclick="change_currency(this)">
+                        Naira                    </a>
+                </li>
+                                <li>
+                    <a class="go-text-right" data-code="22" href="#" onclick="change_currency(this)">
+                        Pakistani Rupees                    </a>
+                </li>
+                            </ul>
+        </li>
+            <ul class="nav navbar-nav">
+        <li class="dropdown" style="margin-top:-9px">
+            <a href="javascript:void(0);" data-toggle="dropdown" class="go-text-right dropdown-toggle" aria-expanded="true"> <img class="go-right flafFIX" src="https://www.phptravels.net/uploads/images/language/en.png" width="21" height="14" alt="English" /> English </a>
+            <ul class="dropdown-menu wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">
+                                <li><a href="https://www.phptravels.net/register/ru" data-langname="Russian" id="ru" class="go-text-right changelang"><img class="go-right flafFIX" src="https://www.phptravels.net/uploads/images/language/ru.png" width="21" height="14" alt="" />  Russian</a></li>
+                                <li><a href="https://www.phptravels.net/register/fa" data-langname="Farsi" id="fa" class="go-text-right changelang"><img class="go-right flafFIX" src="https://www.phptravels.net/uploads/images/language/fa.png" width="21" height="14" alt="" />  Farsi</a></li>
+                                <li><a href="https://www.phptravels.net/register/fr" data-langname="French" id="fr" class="go-text-right changelang"><img class="go-right flafFIX" src="https://www.phptravels.net/uploads/images/language/fr.png" width="21" height="14" alt="" />  French</a></li>
+                                <li><a href="https://www.phptravels.net/register/tr" data-langname="Turkish" id="tr" class="go-text-right changelang"><img class="go-right flafFIX" src="https://www.phptravels.net/uploads/images/language/tr.png" width="21" height="14" alt="" />  Turkish</a></li>
+                                <li><a href="https://www.phptravels.net/register/ar" data-langname="Arabic" id="ar" class="go-text-right changelang"><img class="go-right flafFIX" src="https://www.phptravels.net/uploads/images/language/ar.png" width="21" height="14" alt="" />  Arabic</a></li>
+                                <li><a href="https://www.phptravels.net/register/es" data-langname="Spanish" id="es" class="go-text-right changelang"><img class="go-right flafFIX" src="https://www.phptravels.net/uploads/images/language/es.png" width="21" height="14" alt="" />  Spanish</a></li>
+                                <li><a href="https://www.phptravels.net/register/en" data-langname="English" id="en" class="go-text-right changelang"><img class="go-right flafFIX" src="https://www.phptravels.net/uploads/images/language/en.png" width="21" height="14" alt="" />  English</a></li>
+                            </ul>
+        </li>
+    </ul>
+            <li class="visible-xs mob-menu go-text-right"><i class="go-right icon_set_1_icon-87"></i> Services</li>
+    <li class="visible-xs go-text-right"><a href="https://www.phptravels.net/About-Us"><i class="icon_set_1_icon-93 go-right "></i> About us  <i class="angle right icon pull-right"></i></a></li>
+    <li class="visible-xs go-text-right"><a href="https://www.phptravels.net/Contact-Us"><i class="icon_set_1_icon-84 go-right "></i> Contact Us  <i class="angle right icon pull-right"></i></a></li>
+    <li class="visible-xs go-text-right"><a href="https://www.phptravels.net/Terms-of-Use"><i class="icon_set_1_icon-92 go-right "></i> Terms and Conditions  <i class="angle right icon pull-right"></i></a></li>
+    <li class="visible-xs go-text-right"><a href="https://www.phptravels.net/Privacy-Policy"><i class="icon_set_1_icon-17 go-right "></i> Privacy Policy  <i class="angle right icon pull-right"></i></a></li>
+</ul>        </div>
+    </div>
+</div>
+<div class="clearfix"></div>
+   <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header go-right">
+                <button data-toggle="modal" data-target="#sidebar_left" class="navbar-toggle go-left" type="button" style="margin-right: 10px;">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+                <a href="https://www.phptravels.net/" class="navbar-brand go-right" target="">
+                 <img class="" src="https://www.phptravels.net/uploads/global/logo.png" alt="Register" />
+                </a>
+            </div>
+            <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav go-right">
+              <li class="text-center go-right"><a href="https://www.phptravels.net/">Home</a></li>
+                                <li role="presentation" class=" text-center" data-title="hotels">
+                    <a class="text-center" href="https://www.phptravels.net/m-hotels">
+                <i class="fa fa-building-o"></i>
+                <div class="visible-xs visible-md clearfix"></div>
+                <span class="hidden-xs">Hotels   </span>
+            </a>
+            </li>
+    <li role="presentation" class=" text-center" data-title="flights">
+                    <a class="text-center" href="https://www.phptravels.net/m-flights">
+                <i class="fa fa-plane"></i>
+                <div class="visible-xs visible-md clearfix"></div>
+                <span class="hidden-xs">Flights  </span>
+            </a>
+            </li>
+    <li role="presentation" class=" text-center" data-title="tours">
+                    <a class="text-center" href="https://www.phptravels.net/m-tours">
+                <i class="fa fa-suitcase"></i>
+                <div class="visible-xs visible-md clearfix"></div>
+                <span class="hidden-xs">Tours    </span>
+            </a>
+            </li>
+    <li role="presentation" class=" text-center" data-title="cars">
+                    <a class="text-center" href="https://www.phptravels.net/m-cars">
+                <i class="fa fa-car"></i>
+                <div class="visible-xs visible-md clearfix"></div>
+                <span class="hidden-xs">Cars     </span>
+            </a>
+            </li>
+    <li role="presentation" class=" text-center" data-title="ivisa">
+                    <a class="text-center" href="https://www.phptravels.net/m-ivisa">
+                <i class="fa fa-tag"></i>
+                <div class="visible-xs visible-md clearfix"></div>
+                <span class="hidden-xs">Visa     </span>
+            </a>
+            </li>
+                            <li class="text-center go-right"><a href="https://www.phptravels.net/blog">Blog     </a></li>
+              <li class="text-center go-right"><a href="https://www.phptravels.net/offers">Offers   </a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right hidden-sm go-left">
+              <ul class="nav navbar-nav navbar-side navbar-right sidebar go-left user_menu">
+        <li id="li_myaccount">
+        <a href="javascript:void(0);" data-toggle="dropdown" class="dropdown-toggle go-text-right"><i class="icon_set_1_icon-70 go-right"></i> My Account <b class="lightcaret mt-2 go-left"></b></a>
+        <ul class="dropdown-menu">
+            <li><a class="go-text-right" href="https://www.phptravels.net/login"> Login</a></li>
+            <li><a class="go-text-right" href="https://www.phptravels.net/register">  Sign Up</a></li>
+        </ul>
+    </li>
+        <div class="header-brdr pull-left hidden-xs hidden-md go-left"></div>
+            <li class="dropdown">
+            <a class="dropdown-toggle go-text-right" data-toggle="dropdown" href="#">
+                <strong><i class="icon-money-2 go-right"></i> 
+                    USD                </strong>
+            </a>
+            <ul class="dropdown-menu wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">
+                                <li>
+                    <a class="go-text-right" data-code="1" href="#" onclick="change_currency(this)">
+                        USD                    </a>
+                </li>
+                                <li>
+                    <a class="go-text-right" data-code="3" href="#" onclick="change_currency(this)">
+                        GBP                    </a>
+                </li>
+                                <li>
+                    <a class="go-text-right" data-code="9" href="#" onclick="change_currency(this)">
+                        SAR                    </a>
+                </li>
+                                <li>
+                    <a class="go-text-right" data-code="11" href="#" onclick="change_currency(this)">
+                        EUR                    </a>
+                </li>
+                                <li>
+                    <a class="go-text-right" data-code="12" href="#" onclick="change_currency(this)">
+                        PKR                    </a>
+                </li>
+                                <li>
+                    <a class="go-text-right" data-code="13" href="#" onclick="change_currency(this)">
+                        KWD                    </a>
+                </li>
+                                <li>
+                    <a class="go-text-right" data-code="17" href="#" onclick="change_currency(this)">
+                        JPY                    </a>
+                </li>
+                                <li>
+                    <a class="go-text-right" data-code="18" href="#" onclick="change_currency(this)">
+                        INR                    </a>
+                </li>
+                                <li>
+                    <a class="go-text-right" data-code="19" href="#" onclick="change_currency(this)">
+                        CNY                    </a>
+                </li>
+                                <li>
+                    <a class="go-text-right" data-code="20" href="#" onclick="change_currency(this)">
+                        TRY                    </a>
+                </li>
+                                <li>
+                    <a class="go-text-right" data-code="21" href="#" onclick="change_currency(this)">
+                        Naira                    </a>
+                </li>
+                                <li>
+                    <a class="go-text-right" data-code="22" href="#" onclick="change_currency(this)">
+                        Pakistani Rupees                    </a>
+                </li>
+                            </ul>
+        </li>
+            <ul class="nav navbar-nav">
+        <li class="dropdown" style="margin-top:-9px">
+            <a href="javascript:void(0);" data-toggle="dropdown" class="go-text-right dropdown-toggle" aria-expanded="true"> <img class="go-right flafFIX" src="https://www.phptravels.net/uploads/images/language/en.png" width="21" height="14" alt="English" /> English </a>
+            <ul class="dropdown-menu wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">
+                                <li><a href="https://www.phptravels.net/register/ru" data-langname="Russian" id="ru" class="go-text-right changelang"><img class="go-right flafFIX" src="https://www.phptravels.net/uploads/images/language/ru.png" width="21" height="14" alt="" />  Russian</a></li>
+                                <li><a href="https://www.phptravels.net/register/fa" data-langname="Farsi" id="fa" class="go-text-right changelang"><img class="go-right flafFIX" src="https://www.phptravels.net/uploads/images/language/fa.png" width="21" height="14" alt="" />  Farsi</a></li>
+                                <li><a href="https://www.phptravels.net/register/fr" data-langname="French" id="fr" class="go-text-right changelang"><img class="go-right flafFIX" src="https://www.phptravels.net/uploads/images/language/fr.png" width="21" height="14" alt="" />  French</a></li>
+                                <li><a href="https://www.phptravels.net/register/tr" data-langname="Turkish" id="tr" class="go-text-right changelang"><img class="go-right flafFIX" src="https://www.phptravels.net/uploads/images/language/tr.png" width="21" height="14" alt="" />  Turkish</a></li>
+                                <li><a href="https://www.phptravels.net/register/ar" data-langname="Arabic" id="ar" class="go-text-right changelang"><img class="go-right flafFIX" src="https://www.phptravels.net/uploads/images/language/ar.png" width="21" height="14" alt="" />  Arabic</a></li>
+                                <li><a href="https://www.phptravels.net/register/es" data-langname="Spanish" id="es" class="go-text-right changelang"><img class="go-right flafFIX" src="https://www.phptravels.net/uploads/images/language/es.png" width="21" height="14" alt="" />  Spanish</a></li>
+                                <li><a href="https://www.phptravels.net/register/en" data-langname="English" id="en" class="go-text-right changelang"><img class="go-right flafFIX" src="https://www.phptravels.net/uploads/images/language/en.png" width="21" height="14" alt="" />  English</a></li>
+                            </ul>
+        </li>
+    </ul>
+            <li class="visible-xs mob-menu go-text-right"><i class="go-right icon_set_1_icon-87"></i> Services</li>
+    <li class="visible-xs go-text-right"><a href="https://www.phptravels.net/About-Us"><i class="icon_set_1_icon-93 go-right "></i> About us  <i class="angle right icon pull-right"></i></a></li>
+    <li class="visible-xs go-text-right"><a href="https://www.phptravels.net/Contact-Us"><i class="icon_set_1_icon-84 go-right "></i> Contact Us  <i class="angle right icon pull-right"></i></a></li>
+    <li class="visible-xs go-text-right"><a href="https://www.phptravels.net/Terms-of-Use"><i class="icon_set_1_icon-92 go-right "></i> Terms and Conditions  <i class="angle right icon pull-right"></i></a></li>
+    <li class="visible-xs go-text-right"><a href="https://www.phptravels.net/Privacy-Policy"><i class="icon_set_1_icon-17 go-right "></i> Privacy Policy  <i class="angle right icon pull-right"></i></a></li>
+</ul>            </ul>
+            </div>
+        </div>
+    </nav>
+<div id="body-section"><br /><br />
+<section id="hero" class="login">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3">
+                <div class="panel panel-default">
+                    <div class="go-text-right panel-heading">Sign Up</div>
+                    <div class="clearfix"></div>
+                    <div class="panel-body">
+                        <div id="login">
+                                                        <form action="" method="POST" id="headersignupform" onsubmit="return false;">
+                                <div class="clearfix"></div>
+                                <div class="resultsignup"><div class="alert alert-danger"><p>The Email field must contain a valid email address.</p>
+</div></div>
+                                <div class="form-group">
+                                    <label class="go-right">First Name</label>
+                                    <input class="form-control" type="text" placeholder="First Name" name="firstname" value="" />
+                                </div>
+                                <div class="form-group">
+                                    <label class="go-right">Last Name</label>
+                                    <input class="form-control" type="text" placeholder="Last Name" name="lastname" value="" />
+                                </div>
+                                <div class="form-group">
+                                    <label class="go-right">Mobile Number</label>
+                                    <input class="form-control" type="text" placeholder="Mobile Number" name="phone" value="" />
+                                </div>
+                                <div class="form-group">
+                                    <label class="go-right">Email</label>
+                                    <input class="form-control" type="text" placeholder="Email" name="email" value="" />
+                                </div>
+                                <div class="form-group">
+                                    <label class="go-right">Password</label>
+                                    <input class="form-control" type="password" placeholder="Password" name="password" value="" />
+                                </div>
+                                <div class="form-group">
+                                    <label class="go-right">Confirm Password</label>
+                                    <input class="form-control" type="password" placeholder="Confirm Password" name="confirmpassword" value="" />
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="signupbtn btn_full btn btn-action btn-block btn-lg"><span class="ink animate" style="height: 488px; width: 488px; top: -219px; left: -0.5px;"></span><i class="fa fa-check-square-o"></i> Sign Up</button>
+                                </div>
+                                                                <input type="hidden" class="url" value="https://www.phptravels.net/account/" />
+                                                            </form>
+                                                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script type="text/javascript">
+    $(function(){
+            var url = $(".url").val();
+    // start sign up functionality
+            $(".signupbtn").on('click',function(){
+            $.post("https://www.phptravels.net/account/signup",$("#headersignupform").serialize(), function(response){
+            if($.trim(response) == 'true'){
+            $(".resultsignup").html("&lt;div id='rotatingDiv'&gt;&lt;/div&gt;");
+            window.location.replace(url);
+            }else{
+            $(".resultsignup").html(response); } }); });
+    // end signup functionality
+    })
+
+</script></div> <!--/ .body-section -->
+<section class="app-bg mobside visible-lg">
+    <div class="container">
+        <div class="col-md-4 fr">
+            <img style="position: absolute; max-width: 130px; left: 160px; margin-top: 70px;" src="https://www.phptravels.net/uploads/global/logo.png" alt="" />
+            <img class="img-responsive" src="https://www.phptravels.net/themes/default/assets/img/apps.png" />
+        </div>
+        <div class="col-md-8 fr tr">
+            <h3>Get the mobile app!</h3>
+            <h5>Our app has all your booking needs covered: Secure payment channels, easy 4-step booking process, and sleek user designs. What more could you ask for?</h5>
+            <div class="buttons">
+                <div class="mdl-cell mdl-cell--12-col">
+                                        <a href="https://itunes.apple.com/us/app/phptravels/id1018217005?mt=8" target="_blank" class="footer__downloadButton">
+                        <span class="footer__appIcon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="22" viewBox="0 0 19 22">
+                                <path fill="#FFF" fill-rule="evenodd" d="M13.42 4.74c2.46 0 4.032 2.38 4.032 2.38s-2.4 1.303-2.4 4.13c0 3.357 3.015 4.334 3.015 4.334s-2.38 5.645-5.05 5.645c-1.503 0-1.604-.866-3.6-.866-1.734 0-2.32.864-3.64.864C3.257 21.23 0 15.725 0 11.25c0-4.648 3.297-6.51 5.364-6.51 1.815 0 2.57 1.07 4.032 1.07 1.23 0 2.2-1.07 4.023-1.07zM12.995 0c.363 2.28-1.704 5.097-4.174 5.005C8.46 2.105 11.12.153 12.996 0z"/>
+                            </svg>
+                        </span>
+                        <span class="footer__appText">
+                        Download on the
+                        <span class="footer__appStoreName">App Store</span>
+                        </span>
+                    </a>
+                                        <!--<a href="javascript:void(0)" class="footer__downloadButton">
+                        <span class="footer__appIcon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="24" viewBox="0 0 21 24"><path fill="#FFF" fill-rule="evenodd" d="M9.66 2.227c.04.173.062.383.066.63-.886.384-1.227.658-1.212 1.97v.806l-.607.123v-.932c0-1.936.74-2.24 1.754-2.597zm1.767-.415c.04.188.072.393.094.61 1.59-.227 1.558.428 1.558 1.794v.505l.6-.12v-.383c0-2.122-.33-2.69-2.25-2.404zm-6.255 4.49v-2.79c-.02-1.73.873-2.26 2.522-2.647 2.484-.582 2.642 1.02 2.642 2.038V5.27l.608-.123v-2.19c-.006-1.93-.607-3.373-3.37-2.746-1.49.34-3.01.72-3.01 3.246v2.97l.608-.12zm7.276 7.338H7.774v-3.382l4.674-.685v4.067zm0 4.78l-4.674-.684v-3.63h4.674v4.314zm-5.14-4.78H3.6v-2.83l3.708-.524v3.355zm0 4.067L3.6 17.185v-3.078h3.708v3.6zm9.41-12.98L.008 8.067V20.22l16.71 3.342 3.34-1.215V5.942l-3.34-1.216z"></path></svg>
+                        </span>
+                        <span class="footer__appText">
+                                Download from
+                                <span class="footer__appStoreName">Windows Store</span>
+                        </span>
+                        </a>-->
+                                        <a href="https://play.google.com/store/apps/details?id=com.phptravelsnative" target="_blank" class="footer__downloadButton">
+                        <span class="footer__appIcon">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="25" viewBox="0 0 24 25">
+                                <defs>
+                                    <linearGradient id="a" x1="19.215%" x2="69.302%" y1="-35.157%" y2="93.537%">
+                                        <stop offset="0%" stop-color="#19A3B4"/>
+                                        <stop offset="34.817%" stop-color="#5BC3AF"/>
+                                        <stop offset="92.234%" stop-color="#C9F7A6"/>
+                                        <stop offset="100%" stop-color="#D7FEA5"/>
+                                    </linearGradient>
+                                    <path id="b" d="M17.453 8.308L2.697.248C2.28.02 1.893-.032 1.58.065L13.668 12.07l3.786-3.762"/>
+                                    <linearGradient id="c" x1="-14.698%" x2="74.844%" y1="-114.322%" y2="114.156%">
+                                        <stop offset="0%" stop-color="#FC227C"/>
+                                        <stop offset="100%" stop-color="#FEEB7B"/>
+                                    </linearGradient>
+                                    <linearGradient id="d" x1="28.151%" x2="48.188%" y1="-14.814%" y2="82.894%">
+                                        <stop offset="0%" stop-color="#0E4DA0"/>
+                                        <stop offset="100%" stop-color="#6BFED4"/>
+                                    </linearGradient>
+                                    <path id="e" d="M1.58.065C1.13.205.84.655.84 1.34l.004 21.49c0 .675.28 1.12.717 1.268L13.67 12.072 1.58.065"/>
+                                    <linearGradient id="f" x1="132.245%" x2="5.959%" y1="16.466%" y2="126.31%">
+                                        <stop offset="0%" stop-color="#FC472E"/>
+                                        <stop offset=".332%" stop-color="#FC472E"/>
+                                        <stop offset="100%" stop-color="#893CD8"/>
+                                    </linearGradient>
+                                    <path id="g" d="M1.56 24.098c.315.106.71.056 1.137-.177l14.773-8.07-3.803-3.78L1.56 24.1"/>
+                                </defs>
+                                <g fill="none" fill-rule="evenodd">
+                                    <use fill="url(#a)" xlink:href="#b"/>
+                                    <path fill="url(#c)" d="M17.472 15.85l5.037-2.75c1.02-.56 1.02-1.47 0-2.03L17.45 8.308l-3.786 3.762 3.805 3.78"/>
+                                    <use fill="url(#d)" xlink:href="#e"/>
+                                    <use fill="url(#f)" xlink:href="#g"/>
+                                </g>
+                            </svg>
+                        </span>
+                        <span class="footer__appText">
+                        Get it on
+                        <span class="footer__appStoreName">Google Play</span>
+                        </span>
+                    </a>
+                </div>
+                            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ********************   Removing powered by linkback will result to cancellation of your support service.    ********************  -->
+<div class="hidden-xs hidden-sm" style="padding:10px;background:#e7e7e7;">
+<div class="container">
+    <div class="text-center">
+        Powered by <a href="http://www.phptravels.com" target="_blank">
+            <img src="https://www.phptravels.net/uploads/global/phptravels.png" style="height:22px" height="22" alt="PHPTRAVELS" />
+            <strong>PHPTRAVELS</strong></a>
+    </div>
+</div>
+</div>
+<!-- ********************   Removing powered by linkback will result to cancellation of your support service.    ********************  -->
+
+<footer id="footer" class="hidden-xs hidden-sm ">
+    <div class="container">
+        <div class="col-md-3 grey go-right col-xs-12">
+                        <h2 class="go-text-right"><strong>Newsletter</strong></h2>
+            <div class="col-md-12">
+                <div id="message-newsletter_2"></div>
+                <form role="search" onsubmit="return false;">
+                </form>
+                <div class="row">
+                    <input type="email" class="form-control fccustom2 sub_email form-group" id="exampleInputEmail1" placeholder="Newsletter Enter your email" required="" />
+                    <div class="clearfix"></div>
+                    <button type="submit" class="btn btn-primary btn-block sub_newsletter ttu"> Subscribe</button>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a class="newstext" href="javascript:void(0);">
+                            <div style="color:white" class="subscriberesponse"></div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+                    </div>
+                    <div class="wow fadeIn col-sm-4 col-xs-12 col-md-3 go-right" style="visibility: hidden; animation-name: none;">
+              <h2 class="go-text-right"><strong>Company</strong></h2>
+              <ul class="footerlist go-right go-text-right">
+                                <li><a href="https://www.phptravels.net/contact-us" target="" title="">Contact</a></li>
+                                <li><a href="https://www.phptravels.net/About-Us" target="" title="">About Us</a></li>
+                                <li><a href="https://www.phptravels.net/How-to-Book" target="" title="">How to Book</a></li>
+                                <li><a href="https://www.phptravels.net/Booking-Tips" target="" title="">Booking Tips</a></li>
+                              </ul>
+            </div>
+                    <div class="wow fadeIn col-sm-4 col-xs-12 col-md-3 go-right" style="visibility: hidden; animation-name: none;">
+              <h2 class="go-text-right"><strong>Support</strong></h2>
+              <ul class="footerlist go-right go-text-right">
+                                <li><a href="https://www.phptravels.net/Our-Partners" target="" title="">Our Partners</a></li>
+                                <li><a href="https://www.phptravels.net/Privacy-Policy" target="" title="">Privacy Policy</a></li>
+                                <li><a href="https://www.phptravels.net/Terms-of-Use" target="" title="">Terms of Use</a></li>
+                              </ul>
+            </div>
+                    <div class="wow fadeIn col-sm-4 col-xs-12 col-md-3 go-right" style="visibility: hidden; animation-name: none;">
+              <h2 class="go-text-right"><strong>Business</strong></h2>
+              <ul class="footerlist go-right go-text-right">
+                                <li><a href="https://www.phptravels.net/FAQ" target="" title="">FAQ</a></li>
+                                <li><a href="https://www.phptravels.net/themes/default/../../supplier" target="_blank" title="">Supplier Login</a></li>
+                              </ul>
+            </div>
+        <div class="clearfix"></div>
+    </div>
+</footer>
+<div class="foot hidden-xs hidden-sm">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-4 text-right footbrand nopadding">
+                <a href="https://www.phptravels.net/"><img src="https://www.phptravels.net/uploads/global/logo.png" class="pull-right brand img-responsive" /></a>
+            </div>
+            <div class="col-md-1 footside"></div>
+            <div class="col-3 col-sm-3 col-md-2">
+                <img src="https://www.phptravels.net/themes/default/assets/img/payments.png" class="img-responsive payments" alt="" />
+            </div>
+            <div class="col-md-4">
+                                <div class="col-md-6">
+                    <a class="btn btn-warning btn-block" target="_blank" href="https://www.phptravels.net/supplier-register/">Supplier Sign Up</a>
+                </div>
+                                <div class="col-md-6">
+                    <a class="btn btn-success btn-block" target="_blank" href="https://www.phptravels.net/supplier/">Extranet Login</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="rightsdiv">
+<div class="container hidden-xs hidden-sm">
+        <div class="col-md-6">
+                        <a href="https://www.facebook.com/travelbusiness" data-toggle="tooltip" data-placement="top" title="" target="_blank" data-original-title="Facebook"><img src="https://www.phptravels.net/uploads/images/social/slufm6otpasooc.png" class="social-icons-footer" /></a>
+                        <a href="https://twitter.com/phptravels" data-toggle="tooltip" data-placement="top" title="" target="_blank" data-original-title="Twitter"><img src="https://www.phptravels.net/uploads/images/social/9ztbr148kh4o8c8.png" class="social-icons-footer" /></a>
+                        <a href="http:///www.youtube.com/phptravels" data-toggle="tooltip" data-placement="top" title="" target="_blank" data-original-title="Youtube"><img src="https://www.phptravels.net/uploads/images/social/946746yt.png.png" class="social-icons-footer" /></a>
+                        <a href="https://plus.google.com/+Phptravels/" data-toggle="tooltip" data-placement="top" title="" target="_blank" data-original-title="Google+"><img src="https://www.phptravels.net/uploads/images/social/2wz814aq9mgw04k.png" class="social-icons-footer" /></a>
+                        <a href="http://phptravels.net/sitemap.xml" data-toggle="tooltip" data-placement="top" title="" target="_blank" data-original-title="RSS"><img src="https://www.phptravels.net/uploads/images/social/729370rs.png.png" class="social-icons-footer" /></a>
+                    </div>
+        <div class="col-md-6">
+            <p class="copyright text-right"><strong>© All Rights Reserved by PHPTRAVELS</strong></p>
+        </div>
+</div>
+<!-- tripadvisors block -->
+<!-- tripadvisors block -->
+<div class="hidden-xs hidden-sm gotopDiv">
+    <div class="container text-right">
+        <a href="javascript:void" class="gotop scroll wow fadeInUp btn btn-default" style="visibility: hidden; animation-name: none;"><i class="icon-up-open-big"></i></a>
+    </div>
+</div>
+</div>
+<script src="https://www.phptravels.net/themes/default/assets/js/scripts.js"></script>
+<script>
+    // Travelport flight: start
+    // First, checks if it isn't implemented yet.
+    if (!String.prototype.format) {
+     String.prototype.format = function() {
+       var args = arguments;
+       return this.replace(/{(\d+)}/g, function(match, number) {
+         return typeof args[number] != 'undefined'
+         ? args[number]
+         : match
+         ;
+       });
+     };
+   }
+   $(function(){
+           var adult = parseInt($("[name='tadult']").val()); // Should be 1
+           var children = parseInt($("[name='tchildren']").val());
+           var infant = parseInt($("[name='tinfant']").val());
+           var totalPassenger = (adult + children + infant);
+           var triptype = 'oneway';
+           var arrivalDatetimePicker = $("[name='arrival']");
+           arrivalDatetimePicker.attr('disabled', 'disabled').css('background', '#d9d9d9');
+           $(".trip-check label, .iCheck-helper").on('click', function() {
+             triptype = $(this).parent().find("input").val();
+             if (triptype == 'oneway') {
+               arrivalDatetimePicker.attr('disabled', 'disabled').css('background', '#d9d9d9');
+               arrivalDatetimePicker.removeAttr('required');
+             } else {
+               arrivalDatetimePicker.removeAttr('disabled').css('background', '#F9F9F9');
+               arrivalDatetimePicker.attr('required', 'required');
+             }
+             arrivalDatetimePicker.val('');
+           });
+           
+           $(".widget-select2").select2({
+             placeholder: "Enter Location",
+             minimumInputLength: 3,
+             width: '100%',
+             maximumSelectionSize: 1,
+             ajax:{
+               url: 'https://www.phptravels.net/Suggestions/airports/tport',
+               dataType: 'json',
+               data: function(term, page) {
+                 return {
+                   q: term
+                 }
+               },
+               results: function(data, page) {
+                 return {
+                   results: data
+                 }
+               }
+             },
+             initSelection : function (element, callback) {
+               var elementText = $(element).val();
+               callback({"text": elementText, "id": elementText});
+             }
+           });
+
+           var nowTemp = new Date();
+           var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
+           // Depature time
+           var departureTime = $('.departureTime').datepicker({
+             format: 'yyyy-mm-dd',
+             onRender: function(date) {
+               return date.valueOf() &lt; now.valueOf() ? 'disabled' : '';
+             }
+           }).on('changeDate', function(e){
+             $(this).datepicker('hide');
+             if (triptype == 'round' || triptype == 'return') {
+               var newDate = new Date(e.date);
+               arrivalTime.setValue(newDate.setDate(newDate.getDate() + 1));
+               $('.arrivalTime').focus();
+             }
+           }).data('datepicker');
+
+         //  Arrival time
+         var arrivalTime = $('.arrivalTime').datepicker({
+           format: 'yyyy-mm-dd',
+           onRender: function(date) {
+             return date.valueOf() &lt;= departureTime.date.valueOf() ? 'disabled' : '';
+           }
+         }).on('changeDate', function(){
+           $(this).datepicker('hide');
+         }).data('datepicker');
+
+           // Default fill up date
+           if($('.departureTime').length &gt; 0){
+            if(departureTime.element.val()) {
+             departureTime.setValue(departureTime.element.val());
+           }
+         }
+         if($('.arrivalTime').length &gt; 0) {
+           if(arrivalTime.element.val()) {
+             arrivalTime.setValue(arrivalTime.element.val());
+           }
+         }
+
+         $("[name='tadult']").on('change', function() { adult = parseInt($("[name='tadult']").val()); });
+         $("[name='tchildren']").on('change', function() { children = parseInt($("[name='tchildren']").val()); });
+         $("[name='tinfant']").on('change', function() { infant = parseInt($("[name='tinfant']").val()); });
+         $("#tsumPassenger").on('click', function() {
+           totalPassenger = (adult + children + infant);
+           $("[name='ttotalPassenger']").val(totalPassenger);
+         });
+
+         $("form[name='flightSearch']").on('submit', function(e) {
+           e.preventDefault();
+           var payload = {
+             triptype: triptype,
+             cabinclass: $('[name="cabinclass"]').val(),
+             passenger: {
+               total: totalPassenger,
+               adult: adult,
+               children: children,
+               infant: infant
+             },
+             origin: $(this).find("[name='origin']").val(),
+             destination: $(this).find("[name='destination']").val(),
+             departure: $(this).find("[name='departure']").val(),
+             arrival: $(this).find("[name='arrival']").val(),
+           };
+
+           $('.loader-wrapper').show();
+           $.post(base_url + 'flight/getLowFareFlights', payload, function(response) {
+             $('.loader-wrapper').hide();
+             $('#body-section').html(response.body);
+             window.history.pushState("", "", get_path('flight/search', payload));
+           });
+         });
+       });
+
+function get_path(req, payload)
+{
+ var return_hash = "{0}/{1}/{2}/{3}".format(req, payload.origin, payload.destination, payload.departure);
+
+ if (payload.arrival) {
+   return_hash = "{0}/{1}".format(return_hash, payload.arrival)
+ }
+ if (payload.cabinclass) {
+   return_hash = "{0}/{1}".format(return_hash, payload.cabinclass)
+ }
+ if (payload.passenger.adult) {
+   return_hash = "{0}/{1}Adult".format(return_hash, payload.passenger.adult)
+ }
+ if (payload.passenger.children) {
+   return_hash = "{0}/{1}Children".format(return_hash, payload.passenger.children)
+ }
+ if (payload.passenger.infant) {
+   return_hash = "{0}/{1}Infant".format(return_hash, payload.passenger.infant)
+ }
+
+ return base_url + return_hash;
+}
+   // Travelport flight: end
+
+   if (!String.prototype.format) {
+    String.prototype.format = function() {
+      var args = arguments;
+      return this.replace(/{(\d+)}/g, function(match, number) {
+        return typeof args[number] != 'undefined'
+        ? args[number]
+        : match
+        ;
+      });
+    };
+  }
+
+  $(function(){
+
+    var triptype = 'oneway';
+    var manualtriptype = $('input[name=triptype]:checked').val();
+
+    var arrivalDatetimePicker = $("[name='arrival']");
+    arrivalDatetimePicker.attr('disabled', 'disabled').css('background', '#d9d9d9');
+    $(".trip-check label, .iCheck-helper").on('click', function() {
+      manualtriptype = $(this).parent().find("input").val();
+      if (manualtriptype == 'oneway') {
+        arrivalDatetimePicker.attr('disabled', 'disabled').css('background', '#d9d9d9');
+        arrivalDatetimePicker.removeAttr('required');
+      } else {
+        arrivalDatetimePicker.removeAttr('disabled').css('background', '#F9F9F9');
+        arrivalDatetimePicker.attr('required', 'required');
+      }
+      arrivalDatetimePicker.val('');
+    });
+
+    var nowTemp = new Date();
+    var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
+        // Depature time
+        var departureTime = $('.departureTime').datepicker({
+          format: 'yyyy-mm-dd',
+          onRender: function(date) {
+            return date.valueOf() &lt; now.valueOf() ? 'disabled' : '';
+          }
+        }).on('changeDate', function(e){
+          $(this).datepicker('hide');
+          if (manualtriptype == 'round') {
+            var newDate = new Date(e.date);
+            arrivalTime.setValue(newDate.setDate(newDate.getDate() + 1));
+            $('.arrivalTime').focus();
+          }
+        }).data('datepicker');
+
+        // Arrival time
+        var arrivalTime = $('.arrivalTime').datepicker({
+          format: 'yyyy-mm-dd',
+          onRender: function(date) {
+            return date.valueOf() &lt;= departureTime.date.valueOf() ? 'disabled' : '';
+          }
+        }).on('changeDate', function(){
+          $(this).datepicker('hide');
+        }).data('datepicker');
+
+        // Default fill up date
+        if(departureTime != undefined) {
+          if(departureTime.element.val()) {
+            departureTime.setValue(departureTime.element.val());
+          }
+        }
+        if(departureTime != undefined) {
+          if(arrivalTime.element.val()) {
+            arrivalTime.setValue(arrivalTime.element.val());
+          }
+        }
+        var madult = parseInt($("[name='madult']").val()); // Should be 1
+        var mchildren = parseInt($("[name='mchildren']").val());
+        var minfant = parseInt($("[name='minfant']").val());
+        var totalManualPassenger = (madult + mchildren + minfant);
+        $("[name='madult']").on('change', function() { madult = parseInt($(this).val()); });
+        $("[name='mchildren']").on('change', function() { mchildren = parseInt($(this).val()); });
+        $("[name='minfant']").on('change', function() { minfant = parseInt($(this).val()); });
+        $("#sumManualPassenger").on('click', function() {
+          totalManualPassenger = (madult + mchildren + minfant);
+          $("[name='totalManualPassenger']").val(totalManualPassenger);
+        });
+
+
+
+        // // iati origin
+        // $('input[name="iorigin"]').select2('val', 'HEHEHE');
+        // $('input[name="idestination"]').select2('val', 'HUHUHUHU');
+        var adult = parseInt($("[name='iadult']").val()); // Should be 1
+        var children = parseInt($("[name='ichildren']").val());
+        var infant = parseInt($("[name='iinfant']").val());
+        var xtotalManualPassenger = (adult + children + infant);
+        $("[name='iadult']").on('change', function() { adult = parseInt($(this).val()); });
+        $("[name='ichildren']").on('change', function() { children = parseInt($(this).val()); });
+        $("[name='iinfant']").on('change', function() { infant = parseInt($(this).val()); });
+        $("#isumPassenger").on('click', function() { 
+          var xtotalManualPassenger = (adult + children + infant);
+          $("[name='totalPassenger']").val(xtotalManualPassenger);
+            // console.log(xtotalManualPassenger);
+          });
+
+
+
+        
+        $('#location_from_code').val('{"code":null,"location":""}');
+        $('#location_to_code').val('{"code":null,"location":""}');
+        $('#location_from').select2(
+        {
+          placeholder: "Enter City Or Airport",
+          minimumInputLength: 3,
+          width:'100%', maximumSelectionSize: 1,
+          initSelection: function (element, callback) {
+            var data = {id: "1", text: ""};
+            callback(data);
+          },
+          ajax: {
+            url: "https://www.phptravels.net/admin/ajaxcalls/flightAjex",
+            dataType: 'json',
+            data: function (term, page) {
+              return {
+                        query: term, // search term
+
+                      };
+                    },
+                    results: function (data, page) {
+
+                      return {results: data};
+                    }
+                  }
+                }
+                );
+
+        $('#location_from').on("select2-selecting", function(e) {
+          $("#location_from_code").val(e.val);
+          console.log(e.val);
+        });
+
+
+
+
+        $('#location_to').select2(
+        {
+          placeholder: "Enter City Or Airport",
+          minimumInputLength: 3,
+          width:'100%', maximumSelectionSize: 1,
+          initSelection: function (element, callback) {
+            var data = {id: "1", text: ""};
+            callback(data);
+          },
+          ajax: {
+            url: "https://www.phptravels.net/admin/ajaxcalls/flightAjex",
+            dataType: 'json',
+            data: function (term, page) {
+              return {
+                        query: term, // search term
+
+                      };
+                    },
+                    results: function (data, page) {
+
+                      return {results: data};
+                    }
+                  }
+                }
+                );
+
+        $('#location_to').on("select2-selecting", function(e) {
+         $("#location_to_code").val(e.val);
+         console.log(e.val);
+       });
+
+
+        $("form[name='flightmanualSearch']").on('submit', function(e) {
+          e.preventDefault();
+          var payload = {
+            triptype: manualtriptype,
+            cabinclass: $('[name="cabinclass"]').val(),
+            passenger: {
+              total: totalManualPassenger,
+              adult: madult,
+              children: mchildren,
+              infant: minfant
+            },
+            origin: jQuery.parseJSON($(this).find("[name='origin']").val()).code,
+            destination: jQuery.parseJSON($(this).find("[name='destination']").val()).code,
+            departure: $(this).find("[name='departure']").val(),
+            arrival: $(this).find("[name='arrival']").val(),
+          };
+          $('.loader-wrapper').show();
+          window.location.href = get_manual_path('flights', payload);
+        });
+        function get_manual_path(req, payload)
+        {
+          var return_hash = "{0}/{1}/{2}/{3}".format(req, payload.origin, payload.destination, payload.departure);
+
+          if (payload.arrival) {
+            return_hash = "{0}/{1}".format(return_hash, payload.arrival)
+          }else{
+            return_hash = "{0}/{1}".format(return_hash, 0)
+
+          }
+          if (payload.triptype) {
+            return_hash = "{0}/{1}".format(return_hash, payload.triptype)
+          }
+          if (payload.cabinclass) {
+            return_hash = "{0}/{1}".format(return_hash, payload.cabinclass)
+          }
+          if (payload.passenger.adult) {
+            return_hash = "{0}/{1}".format(return_hash, payload.passenger.adult)
+          }
+          return_hash = "{0}/{1}".format(return_hash, payload.passenger.children);
+          return_hash = "{0}/{1}".format(return_hash, payload.passenger.infant);
+          return_hash = "{0}/{1}".format(return_hash, 0);
+          return_hash = "{0}/{1}".format(return_hash, 0);
+          return_hash = "{0}/{1}".format(return_hash, 0);
+
+            // alert(JSON.stringify(payload.passenger));
+        // alert(payload.passenger.children);
+        return base_url + return_hash;
+      }
+
+    });
+
+$(document).ready(function(){
+        // Safari 3.0+ "[object HTMLElementConstructor]"
+        var isSafari = Object.prototype.toString.call(window.HTMLElement).indexOf('Constructor') &gt; 0 || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || safari.pushNotification);
+        if(isSafari == true){
+          $(".bg-warning").css("padding-bottom", "82px !important");
+        }
+      });
+
+$(".car-startlocation").select2({
+  placeholder: "Search for an Item",
+  minimumInputLength: 3,
+  width: '100%',
+  maximumSelectionSize: 1,
+  ajax: {
+    url: 'https://www.phptravels.net/cartrawler/getLocations',
+    dataType: 'json',
+    type: "GET",
+    quietMillis: 50,
+    data: function (term) {
+      return {
+        term: term
+      };
+    },
+    results: function (data) {
+      return {
+        results: $.map(data.locations, function (item) {
+          return {
+            text: item.locationName,
+            code: item.locationCode,
+            id: item.locationName
+          }
+        })
+      };
+    }
+  }
+});
+$(".car-endlocation").select2({
+  placeholder: "Search for an Item",
+  minimumInputLength: 3,
+  width: '100%',
+  maximumSelectionSize: 1,
+  ajax: {
+    url: 'https://www.phptravels.net/cartrawler/getLocations',
+    dataType: 'json',
+    type: "GET",
+    quietMillis: 50,
+    data: function (term) {
+      return {
+        term: term
+      };
+    },
+    results: function (data) {
+      return {
+        results: $.map(data.locations, function (item) {
+          return {
+            text: item.locationName,
+            code: item.locationCode,
+            id: item.locationName
+          }
+        })
+      };
+    }
+  }
+});
+
+$(".car-startlocation").on("select2-selecting",function(e){
+  $("input[name='pickupLocationId']").val(e.object.code);
+  $("input[name='returnLocationId']").val(e.object.code);
+  $('.car-endlocation').select2('data', {
+    text: e.object.text,
+    id: e.object.text
+  });
+});
+
+var options = {
+  url: function(phrase) {
+   return "https://yasen.hotellook.com/autocomplete?lang=en-US&amp;limit=10&amp;term="+phrase;
+ },
+ categories:[{
+  listLocation: "cities"
+}],
+list: {
+  match: {
+    enabled: false
+  },
+  maxNumberOfElements: 10
+},
+getValue: "fullname",
+};
+$("#citiesInput").easyAutocomplete(options);
+
+var fmt = "dd/mm/yyyy";
+var baseURL = "https://www.phptravels.net/";
+
+// $(document).ready(function() {
+
+  /* Wish list global function */
+  $(".wishlistcheck").on("click",function(){
+    var id = $(this).prop('id');
+    var module = $(this).data('module');
+    var userid = "";
+    var action = "add";
+    var thisdiv = $(this);
+    if($(this).hasClass('fav')){
+      action = "remove";
+    }
+
+
+    $.post(baseURL+'account/wishlist/'+action,{module: module, itemid: id, loggedin: userid},function(resp){
+      var response = $.parseJSON(resp);
+      if(response.isloggedIn){
+
+        if(action == "remove"){
+          $("."+module+"wishsign"+id).html("+");
+        //$("."+module+"wishtext"+id).html("Add to Wishlist");
+        $("."+module+"wishtext"+id).tooltip('hide').attr('data-original-title', "Add to wishlist").tooltip('fixTitle').tooltip('show');
+        $("."+module+"wishsign"+id).removeClass("fav");
+        thisdiv.removeClass('fav');
+
+      }else{
+
+        thisdiv.addClass('fav');
+        $("."+module+"wishsign"+id).addClass("fav");
+        $("."+module+"wishsign"+id).html("-");
+        //$("."+module+"wishtext"+id).html("Remove From Wishlist");
+        $("."+module+"wishtext"+id).tooltip('hide').attr('data-original-title', "Remove from wishlist").tooltip('fixTitle').tooltip('show');
+
+      }
+
+    }else{
+      alert("Please Login to add to wishlist.");
+    }
+
+  });
+
+  });
+  /* End Wish list global function */
+
+
+  /* tours ajax categories loader */
+      $('#location').on('change',function(){ var location = $(this).val(); $.post(baseURL+'tours/tourajaxcalls/onChangeLocation',{location: location},function(resp){ var response = $.parseJSON(resp); console.log(response); if(response.hasResult){ $("#tourtype").html(response.optionsList); }else{ $("#tourtype").html(response.optionsList); } mySelectUpdate(); }) });
+  
+  /* cars ajax types loader */
+      var totalsVal=$("#cartotals").val();if(totalsVal=="1"){$(".showTotal").show()}else{$(".showTotal").hide()}
+    var pickupLocation=$('#pickuplocation').val();var dropoffLocation=$('#droplocation').val();$('#carlocations').on('change',function(){var location=$(this).val();$.post(baseURL+'cars/carajaxcalls/onChangeLocation',{location:location},function(resp){var response=$.parseJSON(resp);if(response.hasResult){$("#carlocations2").html(response.optionsList).select2({width:'100%',maximumSelectionSize:1})}})});$('#pickuplocation').on('change',function(){var location=$('#pickuplocation').val();var carid=$("#itemid").val();var pickupDate=$("#departcar").val();var dropoffDate=$("#returncar").val();$.post(baseURL+'cars/carajaxcalls/getDropoffLocations',{location:location,carid:carid,pickupDate:pickupDate,dropoffDate:dropoffDate},function(resp){var response=$.parseJSON(resp);console.log(response);if(response.hasResult){$(".showTotal").show();$(".totaldeposit").html(response.priceInfo.depositAmount);$(".totalTax").html(response.priceInfo.taxAmount);$(".grandTotal").html(response.priceInfo.grandTotal);$("#droplocation").html(response.optionsList).select2({width:'100%',maximumSelectionSize:1})}})});$('.carDates').blur(function(){setTimeout(function(){getCarPrice()},500)});$('#droplocation').on("change",(function(){getCarPrice()}));function getCarPrice(){var pickupLocation=$('#pickuplocation').val();var dropoffLocation=$('#droplocation').val();var carid=$("#itemid").val();var pickupDate=$("#departcar").val();var dropoffDate=$("#returncar").val();$.post(baseURL+'cars/carajaxcalls/getCarPriceAjax',{pickupLocation:pickupLocation,dropoffLocation:dropoffLocation,carid:carid,pickupDate:pickupDate,dropoffDate:dropoffDate},function(resp){var response=$.parseJSON(resp);console.log(response);$(".showTotal").show();$(".totaldeposit").html(response.depositAmount);$(".totalTax").html(response.taxAmount);$(".grandTotal").html(response.grandTotal)})}
+  
+  /* Datepicker */
+  /* disabling dates */
+  var nowTemp = new Date();
+  var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
+  var checkin = $('.dpd1').datepicker({
+    format: fmt,
+    onRender: function(date) {
+      return date.valueOf() &lt; now.valueOf() ? 'disabled' : '';
+    }
+  }).on('changeDate', function(ev) {
+    // if (ev.date.valueOf() &gt; checkout.date.valueOf()) {
+      var newDate = new Date(ev.date);
+      newDate.setDate(newDate.getDate() + 1);
+      checkout.setValue(newDate);
+    // }
+    checkin.hide();
+    $('.dpd2')[0].focus();
+  }).data('datepicker');
+  var checkout = $('.dpd2').datepicker({
+    format: fmt,
+    onRender: function(date) {
+      return date.valueOf() &lt;= checkin.date.valueOf() ? 'disabled' : '';
+    }
+  }).on('changeDate', function(ev) {
+    var newDate = new Date(ev.date);
+    checkout.hide();
+
+  }).data('datepicker');
+
+  /* disabling dates for rooms search */
+  var nowTemprooms = new Date();
+  var nowrooms = new Date(nowTemprooms.getFullYear(), nowTemprooms.getMonth(), nowTemprooms.getDate(), 0, 0, 0, 0);
+  var checkinrooms = $('.dpd1rooms').datepicker({
+    format: fmt,
+    onRender: function(date) {
+      return date.valueOf() &lt; now.valueOf() ? 'disabled' : '';
+    }
+  }).on('changeDate', function(ev) {
+    // if (ev.date.valueOf() &gt; checkout.date.valueOf()) {
+      var newDaterooms = new Date(ev.date);
+      newDaterooms.setDate(newDaterooms.getDate() + 1);
+      checkoutrooms.setValue(newDaterooms);
+    // }
+    checkinrooms.hide();
+    $('.dpd2rooms')[0].focus();
+  }).data('datepicker');
+  var checkoutrooms = $('.dpd2rooms').datepicker({
+    format: fmt,
+    onRender: function(date) {
+      return date.valueOf() &lt;= checkinrooms.date.valueOf() ? 'disabled' : '';
+    }
+  }).on('changeDate', function(ev) {
+    var newDaterooms = new Date(ev.date);
+    checkoutrooms.hide();
+
+  }).data('datepicker');
+
+  /* Expedia datepicker */
+    /* End Expedia Datepicker*/
+
+  /* Dohop datepicker */
+    /* End Dohop Datepicker*/
+
+      // Tours checkin - disabling Single date
+    var nowTemp4 = new Date();
+    var now4 = new Date(nowTemp4.getFullYear(), nowTemp4.getMonth(), nowTemp4.getDate(), 0, 0, 0, 0);
+    var checkin4 = $('.tchkin').datepicker({format: fmt, onRender: function(date) {
+      return date.valueOf() &lt; now4.valueOf() ? 'disabled' : ''; } }).on('changeDate', function(ev) {
+        var tdate =new Date(ev.date);
+        $('.tchkin').datepicker('hide');
+      });
+              var nowTemp5 = new Date();
+      var now5 = new Date(nowTemp5.getFullYear(), nowTemp5.getMonth(), nowTemp5.getDate(), 0, 0, 0, 0);
+      var departcar = $('#departcar').datepicker({
+        format: fmt,
+        onRender: function(date) {
+          return date.valueOf() &lt; now5.valueOf() ? 'disabled' : '';
+        }
+      }).on('changeDate', function(ev) {
+    //   if (ev.date.valueOf() &gt; returncar.date.valueOf()) {
+      var newDate5 = new Date(ev.date)
+
+      newDate5.setDate(newDate5.getDate() + 0);
+
+      returncar.setValue(newDate5);
+    //  }
+    departcar.hide();
+    $('#returncar')[0].focus();
+  }).data('datepicker');
+      var returncar = $('#returncar').datepicker({
+        format: fmt,
+        onRender: function(date) {
+          return date.valueOf() &lt;= departcar.date.valueOf() ? 'disabled' : '';
+        }
+      }).on('changeDate', function(ev) {
+        var cnewDate = new Date(ev.date);
+        returncar.hide();
+
+      }).data('datepicker');
+
+      var nowTemp52 = new Date();
+      var now52 = new Date(nowTemp52.getFullYear(), nowTemp52.getMonth(), nowTemp52.getDate(), 0, 0, 0, 0);
+      var departcar2 = $('#departcar2').datepicker({
+        format: fmt,
+        onRender: function(date) {
+          return date.valueOf() &lt; now52.valueOf() ? 'disabled' : '';
+        }
+      }).on('changeDate', function(ev) {
+    //   if (ev.date.valueOf() &gt; returncar.date.valueOf()) {
+      var newDate52 = new Date(ev.date)
+
+      newDate52.setDate(newDate52.getDate() + 0);
+
+      returncar2.setValue(newDate52);
+    //  }
+    departcar2.hide();
+    $('#returncar2')[0].focus();
+  }).data('datepicker');
+      var returncar2 = $('#returncar2').datepicker({
+        format: fmt,
+        onRender: function(date) {
+          return date.valueOf() &lt;= departcar2.date.valueOf() ? 'disabled' : '';
+        }
+      }).on('changeDate', function(ev) {
+        var cnewDate2 = new Date(ev.date);
+        returncar2.hide();
+
+      }).data('datepicker');
+
+    
+
+
+
+    /* Newsletter subscription */
+    $(".sub_newsletter").on("click",function(){var e=$(".sub_email").val();$.post("https://www.phptravels.net/home/subscribe",{email:e},function(e){$(".subscriberesponse").html(e).fadeIn("slow"),setTimeout(function(){$(".subscriberesponse").fadeOut("slow")},2000)})});
+
+    /* dropdown on hover */
+    $("ul.nav li.dropdown").hover(function(){$(this).find(".dropdown-menu").stop(!0,!0).delay(200).fadeIn(200)},function(){$(this).find(".dropdown-menu").stop(!0,!0).delay(200).fadeOut(200)});
+
+// }); end: $(function(){});
+
+/* start change currency functionality */
+function change_currency(element){
+  var currency_id = $(element).data('code');
+  $("#loadingbg").css("display","block"),
+  $.post("https://www.phptravels.net/admin/ajaxcalls/changeCurrency",{ id: currency_id}, function() {
+    location.reload();
+  }
+  )};
+
+  /* map iframe modal */
+  function showMap(a,o){"modal"==o?($("#mapModal").modal("show"),$("#mapModal").on("shown.bs.modal",function(){$("#mapModal .mapContent").html('&lt;iframe src="'+a+'" width="100%" height="450" frameborder="0" style="border:0"&gt;&lt;/iframe&gt;')})):$("#"+o).html('&lt;iframe src="'+a+'" width="100%" height="450" frameborder="0" style="border:0"&gt;&lt;/iframe&gt;')}
+</script>
+
+
+
+</body></html>

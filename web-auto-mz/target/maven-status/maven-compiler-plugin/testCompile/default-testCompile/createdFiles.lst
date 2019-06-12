@@ -1,0 +1,6 @@
+stepdefinitions/SimpleSteps.class
+stepdefinitions/Hooks.class
+testrunner/TestRunner.class
+stepdefinitions/HomeStepDefinitions.class
+stepdefinitions/AccountStepDefinitions.class
+stepdefinitions/RegisterStepDefinitions.class

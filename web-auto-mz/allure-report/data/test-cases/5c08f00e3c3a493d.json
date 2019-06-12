@@ -1,0 +1,279 @@
+{
+  "uid" : "5c08f00e3c3a493d",
+  "name" : "Sign up new user successfully",
+  "fullName" : "This feature is creating a new account in phptravels.net: Sign up new user successfully",
+  "historyId" : "638b06e0d0b388da4de09faf3a2c5b71",
+  "time" : {
+    "start" : 1552494420938,
+    "stop" : 1552494438059,
+    "duration" : 17121
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "Hooks.launchBrowser()",
+    "time" : {
+      "start" : 1552494420948,
+      "stop" : 1552494420963,
+      "duration" : 15
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "Hooks.openHomePage()",
+    "time" : {
+      "start" : 1552494420966,
+      "stop" : 1552494432184,
+      "duration" : 11218
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Given  homepage is opened",
+      "time" : {
+        "start" : 1552494432189,
+        "stop" : 1552494432228,
+        "duration" : 39
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "When  I click on my account button",
+      "time" : {
+        "start" : 1552494432232,
+        "stop" : 1552494432942,
+        "duration" : 710
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "And  I click on Sign Up button in Homepage",
+      "time" : {
+        "start" : 1552494432942,
+        "stop" : 1552494433846,
+        "duration" : 904
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "And  I enter First Name",
+      "time" : {
+        "start" : 1552494433847,
+        "stop" : 1552494434111,
+        "duration" : 264
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "And  I enter Last Name",
+      "time" : {
+        "start" : 1552494434112,
+        "stop" : 1552494434277,
+        "duration" : 165
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "And  I enter Mobile Number",
+      "time" : {
+        "start" : 1552494434278,
+        "stop" : 1552494434473,
+        "duration" : 195
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "And  I enter Email",
+      "time" : {
+        "start" : 1552494434473,
+        "stop" : 1552494434867,
+        "duration" : 394
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "And  I enter Password",
+      "time" : {
+        "start" : 1552494434867,
+        "stop" : 1552494434999,
+        "duration" : 132
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "And  I enter PasswordND",
+      "time" : {
+        "start" : 1552494434999,
+        "stop" : 1552494435213,
+        "duration" : 214
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "And  I click on Sign Up button",
+      "time" : {
+        "start" : 1552494435213,
+        "stop" : 1552494435350,
+        "duration" : 137
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Then  New account is created",
+      "time" : {
+        "start" : 1552494435350,
+        "stop" : 1552494437789,
+        "duration" : 2439
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 11,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "Hooks.closeBrowser()",
+    "time" : {
+      "start" : 1552494437790,
+      "stop" : 1552494438056,
+      "duration" : 266
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "This feature is creating a new account in phptravels.net"
+  }, {
+    "name" : "story",
+    "value" : "Sign up new user successfully"
+  }, {
+    "name" : "host",
+    "value" : "Martinss-MacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "14922@Martinss-MacBook-Pro.local.main(1)"
+  }, {
+    "name" : "package",
+    "value" : "This feature is creating a new account in phptravels.net"
+  }, {
+    "name" : "suite",
+    "value" : "This feature is creating a new account in phptravels.net"
+  }, {
+    "name" : "testClass",
+    "value" : "Sign up new user successfully"
+  }, {
+    "name" : "framework",
+    "value" : "cucumber3jvm"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "5c08f00e3c3a493d.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,22 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "This feature is creating a new account in phptravels.net",
+    "children" : [ {
+      "name" : "Sign up new user successfully",
+      "uid" : "5c08f00e3c3a493d",
+      "parentUid" : "3e9313a0c70e549b93f43c2f4cbb02f4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1552494420938,
+        "stop" : 1552494438059,
+        "duration" : 17121
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "3e9313a0c70e549b93f43c2f4cbb02f4"
+  } ]
+}

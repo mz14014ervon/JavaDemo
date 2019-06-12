@@ -1,0 +1,26 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "Martinss-MacBook-Pro.local",
+    "children" : [ {
+      "name" : "14922@Martinss-MacBook-Pro.local.main(1)",
+      "children" : [ {
+        "name" : "Sign up new user successfully",
+        "uid" : "5c08f00e3c3a493d",
+        "parentUid" : "90613329178973c9ee311e6cb2a9d25d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1552494420938,
+          "stop" : 1552494438059,
+          "duration" : 17121
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "90613329178973c9ee311e6cb2a9d25d"
+    } ],
+    "uid" : "6e76faef42f15a1764972b807903b4e7"
+  } ]
+}
